@@ -1,0 +1,15 @@
+<!-- Массив -->
+<h2>Products</h2>
+
+<div class="products">
+  <div class="product" *ngFor="let product of products">
+    <!-- Вывод ссылки -->
+    <a [title]="product.name + ' details'">{{ product.name }}</a>
+
+    <p *ngIf="product.description">Description: {{ product.description }}</p>
+
+    <button (click)="share()">Share</button>
+    <!-- Из компонента -->
+    <app-product-alerts [product]="product"> </app-product-alerts>
+  </div>
+</div>

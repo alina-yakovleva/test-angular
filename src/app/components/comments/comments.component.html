@@ -1,0 +1,17 @@
+<h1>Comment:{{ comment.id }}</h1>
+
+<div class="comment-wrapper">
+  <h2>{{ comment.name | uppercase }}</h2>
+  <!-- Для передачи динамики -->
+  <!-- <img [src]="comment.img" [alt]="comment.name" /> -->
+  <div>E-mail:{{ comment.email }}</div>
+
+  <button
+    [ngStyle]="{ background: open ? 'rgb(187, 165, 219)' : 'antiquewhite' }"
+    (click)="open = !open"
+    class="button"
+  >
+    {{ !open ? "Open body" : "Close body" }}
+  </button>
+  <div *ngIf="open">{{ comment.body }}</div>
+</div>

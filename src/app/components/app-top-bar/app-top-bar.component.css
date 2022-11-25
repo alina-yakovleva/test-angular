@@ -1,0 +1,16 @@
+.header {
+  background-color: #6066db;
+  width: 100%;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  color: white;
+}
+.header button {
+  border: 1px solid white;
+  padding: 10px;
+}

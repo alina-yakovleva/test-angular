@@ -1,0 +1,7 @@
+<div class="modal" *ngIf="modalService.isVisible$ | async">
+  <button (click)="modalService.close()" class="close">x</button>
+
+  <h1>Добавить комментарий</h1>
+
+  <app-create-product></app-create-product>
+</div>

@@ -1,0 +1,26 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+
+.product {
+  color: #6066db;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.product button {
+  border: none;
+  background-color: #6066db;
+  color: white;
+  padding: 10px;
+  width: 90px;
+  cursor: pointer;
+}
+.product a,
+.product p {
+  margin-bottom: 10px;
+}
